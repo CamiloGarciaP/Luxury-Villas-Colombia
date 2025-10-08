@@ -29,10 +29,13 @@ html {
 
 html,
 body {
+    height: 100%;
     margin: 0;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     font-size: 1.6rem;
 }
 
@@ -56,12 +59,10 @@ body {
 }
 
 /* HEADER */
-ul.menu-main {
-    display: flex;
-    list-style: none;
-}
-
 /* MAIN */
+.main {
+    flex: 1;
+}
 /* ASIDE */
 /* FOOTER */
 
