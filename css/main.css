@@ -1,7 +1,8 @@
 /* Variables globales */
+@import url("./normalize.css");
 @import url('https://fonts.googleapis.com/css2?family=Alice&family=Oranienbaum&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root{
+:root {
     /* Convierte 1rem en base 10px */
     --over-font-size: 62.5%;
     /* Este porcentaje hace el "em/rem" sean base 10px */
@@ -21,18 +22,128 @@
     --Dark-Liver: #565449;
     --Chinese-Black: #11120D;
 }
-html{
-    font-size: var(--over-font-size) ;
+
+html {
+    font-size: var(--over-font-size);
 }
-html, body{
-    height: 100%;
+
+html,
+body {
     margin: 0;
 }
-body{
-    background-color: var(--Dark-Puce);
+
+body {
+    font-size: 1.6rem;
 }
+
+.container {
+    border: 1px dotted blue;
+    box-sizing: border-box;
+    margin: 0 auto;
+    /**Centra el elemento*/
+    max-width: 96vw;
+    /**Ancho Máximo*/
+    padding: 0 .8rem;
+    /**Hace que los bordes queden internos*/
+}
+
+.container-fluid {
+    border: 1px solid orangered;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 100vw;
+    padding: 0;
+}
+
 /* HEADER */
 ul.menu-main {
     display: flex;
     list-style: none;
+}
+
+/* MAIN */
+/* ASIDE */
+/* FOOTER */
+
+
+/* Media Queries(Break-Point) (Siempre tienen que ir de último)*/
+@media (width > 567px) { /*----------------------------------------------------------------------------------------------------------------------------*/
+
+    /** Ahora se cambia la escritura de " min-width: #px " a " width > #px " para Mobile First*/
+    /** Y para Desktop First se escribe " width < #px */
+    .container {
+        max-width: 54rem;
+        padding: 0 1.6rem;
+        /**Cada uno de estos maneja la distancia entre el contenido y el borde del contenedor. E incrementa en 8px en cada media query*/
+    }
+    /* HEADER */
+    /* MAIN */
+    /* ASIDE */
+    /* FOOTER */
+}
+
+@media (width > 768px) { /*----------------------------------------------------------------------------------------------------------------------------*/
+    .container {
+        max-width: 72rem;
+        padding: 0 2.4rem;
+    }
+    /* HEADER */
+    /* MAIN */
+    /* ASIDE */
+    /* FOOTER */
+}
+
+@media (width > 1024px) { /*----------------------------------------------------------------------------------------------------------------------------*/
+    .container {
+        max-width: 99.2rem;
+        padding: 0 3.2rem;
+    }
+    /* HEADER */
+    /* MAIN */
+    /* ASIDE */
+    /* FOOTER */
+}
+
+@media (width > 1200px) { /*----------------------------------------------------------------------------------------------------------------------------*/
+    .container {
+        max-width: 114rem;
+        padding: 0 4rem;
+    }
+    /* HEADER */
+    /* MAIN */
+    /* ASIDE */
+    /* FOOTER */
+}
+
+@media (width > 1400px) { /*----------------------------------------------------------------------------------------------------------------------------*/
+    .container {
+        max-width: 132rem;
+        padding: 0 4.8rem;
+    }
+    /* HEADER */
+    /* MAIN */
+    /* ASIDE */
+    /* FOOTER */
+}
+
+@media (width > 1600px) { /*----------------------------------------------------------------------------------------------------------------------------*/
+    .container {
+        max-width: 144rem;
+        padding: 0 5.6rem;
+    }
+    /* HEADER */
+    /* MAIN */
+    /* ASIDE */
+    /* FOOTER */
+}
+
+@media (width > 1920px) { /*----------------------------------------------------------------------------------------------------------------------------*/
+    .container {
+        max-width: 160rem;
+        padding-left: 0 6.4rem;
+    }
+    /* HEADER */
+    /* MAIN */
+    /* ASIDE */
+    /* FOOTER */
 }
