@@ -27,7 +27,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Oranienbaum", serif;
-    background-color: var(--Grullo);
+    background-color: var(--Pastel-Gray);
 }
 
 html {
@@ -44,7 +44,7 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 1.6rem;
-    background-color: var(--White);
+    /* background-color: var(--White); */
 }
 
 .container {
@@ -68,15 +68,13 @@ body {
 /* ****************************************************************************************************************************************************************************************************************  */
 /* HEADER */
 header{
-    z-index: 200;
     width: 100%;
     display: flex;
     justify-content: space-around;
-    padding: .5rem 2rem .5rem 1.3rem;
-    position: fixed;
-    background-color: var(--Grullo);
+    padding: .5rem 1.5rem .5rem 1.5rem;
+    position: sticky;
     top: 0;
-    left: 0;
+    background-color: var(--Pastel-Gray);
 }
 /* MENU (header) */ /*---------------------------------------------------------------*/
 .menu{
@@ -88,7 +86,7 @@ header{
     justify-content: space-between;
     padding: 1rem 2rem;
 }
-/* LOGO */
+/* LOGO */  /*-----------------------------------------------------------------------*/
 .logo{
     display: flex;
     justify-content: center;
@@ -104,12 +102,12 @@ header{
     font-size: 700;
     font-size: 3rem;
 }
-/* ITEMS */
+/* ITEMS */ /*-------------------------------------------------------------------------*/
 .list{
     color: var(--Dark-Puce);
     list-style: none;
     display: flex;
-    gap: 3rem;
+    gap: 1.5rem;
 }
 .list li a{
     color: var(--Dark-Puce);
@@ -118,18 +116,18 @@ header{
     font-weight: 500;
 }
 .list li a:hover{
-    color: var(--Timberwolf);
+    color: var(--Raisin-Black);
 }
 
 
 /* Left section  */ /*---------------------------------------------------------------*/
 .left{
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 /* Right section */ /*---------------------------------------------------------------*/
 .right{
-    border: 2px solid green;
+    /* border: 2px solid green; */
     display: none;
 }
 
@@ -139,6 +137,7 @@ header{
 .main {
     flex: 1;
 }
+
 /* ****************************************************************************************************************************************************************************************************************  */
 /* ASIDE */
 
