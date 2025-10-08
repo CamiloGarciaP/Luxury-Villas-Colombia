@@ -1,0 +1,38 @@
+/* Variables globales */
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Oranienbaum&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    /* Convierte 1rem en base 10px */
+    --over-font-size: 62.5%;
+    /* Este porcentaje hace el "em/rem" sean base 10px */
+
+
+    /* Colores base */
+    /* Opción #1 */
+    --White: #FFFFFF;
+    --Cultured: #FAF8F5;
+    --Timberwolf: #DFDACF;
+    --Grullo: #A3968D;
+    --Dark-Puce: #4D403A;
+    --Raisin-Black: #262626;
+    /* Opción #2 */
+    --Floral-White: #FFFBF4;
+    --Pastel-Gray: #D8CFBC;
+    --Dark-Liver: #565449;
+    --Chinese-Black: #11120D;
+}
+html{
+    font-size: var(--over-font-size) ;
+}
+html, body{
+    height: 100%;
+    margin: 0;
+}
+body{
+    background-color: var(--Dark-Puce);
+}
+/* HEADER */
+ul.menu-main {
+    display: flex;
+    list-style: none;
+}
