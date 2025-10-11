@@ -10,19 +10,9 @@
 
     /* Colores base */
     /* Opción #1 */
-    --White: #FFFFFF;
-    --Perla: #E8EAEB;
-    --Cultured: #FAF8F5;
-    --Timberwolf: #DFDACF;
-    --Grullo: #A3968D;
-    --Dark-Puce: #4D403A;
-    --Raisin-Black: #262626;
+   --White: #FFFFFF;
     --Black: #000000;
-    /* Opción #2 */
-    --Floral-White: #FFFBF4;
-    --Pastel-Gray: #D8CFBC;
-    --Dark-Liver: #565449;
-    --Chinese-Black: #11120D;
+    --Dorado: #d6a676;
 }
 
 * {
@@ -72,18 +62,16 @@ body {
 /* HEADER */
 header {
     width: 100%;
-    position: sticky;
+    /* position: sticky; */
     top: 0;
-    /* background-color: var(--Perla); */
 }
 
 .imagen-fondo {
-    background-image: url("../images/fondo-header.jpg");
+    background-image: url("../images/casa-fondo.png");
     background-size: cover;
     background-repeat: no-repeat;
-    /* border: 3px solid blue; */
-    height: 34.3rem;
-    background-position: 0 0;
+    background-position: center;
+    height: 100vh;
 }
 
 /* MENU (header) */
@@ -108,29 +96,29 @@ header {
 }
 
 .name-web {
-    color: var(--Perla);
-    font-size: 700;
+    color: var(--White);
     font-size: 3rem;
+    text-align: center;
 }
 
 /* ITEMS */
 /*-------------------------------------------------------------------------*/
 .list {
-    color: var(--Dark-Puce);
+    color: var(--White);
     list-style: none;
     display: flex;
     gap: 1.5rem;
 }
 
 .list li a {
-    color: var(--Perla);
+    color: var(--White);
     text-decoration: none;
     font-size: 2rem;
     font-weight: 500;
 }
 
 .list li a:hover {
-    color: var(--Raisin-Black);
+    color: var(--Dorado);
 }
 
 
@@ -182,7 +170,7 @@ header {
     display: flex;
     justify-content: center;
     height: 30rem;
-    padding: 3rem;
+    padding: 1.5rem;
 }
 
 .cards {
@@ -201,6 +189,12 @@ header {
     width: 30%;
     text-align: center;
 }
+/* .img-guatape{
+    max-width: 100%;
+    width: 30%;
+    border-radius: 1rem;
+} */
+
 
 
 
